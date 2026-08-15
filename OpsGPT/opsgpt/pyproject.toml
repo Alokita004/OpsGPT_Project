@@ -1,0 +1,11 @@
+[tool.poetry]
+name = "opsgpt"
+version = "0.1.0"
+description = "OpsGPT - AI Operations Copilot"
+authors = ["OpsGPT"]
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
