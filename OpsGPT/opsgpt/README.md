@@ -1,36 +1,6 @@
-📁 Project Structure
-OpsGPT/
-│
-├── app/
-│   ├── main.py
-│   ├── config.py
-│   │
-│   ├── agents/
-│   │   ├── ops_agent.py
-│   │   └── prompts.py
-│   │
-│   ├── tools/
-│   │   ├── anomaly_tools.py
-│   │   ├── bigquery_tools.py
-│   │   └── remediation_tools.py
-│   │
-│   ├── models/
-│   │   └── schemas.py
-│   │
-│   ├── services/
-│   │   ├── pubsub_service.py
-│   │   └── cloud_run_service.py
-│   │
-│   └── utils/
-│       └── validators.py
-│
-├── tests/
-│   ├── test_agents.py
-│   ├── test_tools.py
-│   └── test_api.py
-│
-├── requirements.txt
-├── Dockerfile
-├── .env.example
-├── .gitignore
-└── README.md
+AI Agent Orchestration Layer → Agent Router → Planner → Tool Executor → LangGraph → LLM
+Intelligence & Tools Layer → Anomaly Detection → BigQuery Analysis → Root Cause Analysis → Remediation → Notifications
+Decision & Action Layer → Guardrails → Risk Scoring → Recommendations → Action Execution → Audit/Trace
+GCP infrastructure → Pub/Sub, Cloud Run, BigQuery, Cloud Storage, IAM, Monitoring, Secrets Manager
+Clear separation between synchronous API requests and asynchronous incident/event workflows
+External integrations for monitoring, ITSM, Slack/email, CI/CD, and third-party systems
